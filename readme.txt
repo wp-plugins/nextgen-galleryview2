@@ -10,6 +10,8 @@ NextGEN-Galleryview (originally created by Alex Rabe) is a Wordpress plugin prov
 
 == Description ==
 
+NextGEN-Galleryview (originally created by Alex Rabe) is a Wordpress plugin providing NextGen-Gallery plugin users a new template based on the Galleryview jQuery Plugin created by Jack Wanders (@jackwanders). The plugin has been updated by Brandon Hubbard (@bhubbard).
+
 
 = Features =
 
