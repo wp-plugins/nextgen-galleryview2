@@ -48,7 +48,7 @@ if (!class_exists('nggGalleryview')) {
 			if ( !is_admin() ) {
 
 			   // Check theme for styles first
-			   if ( file_exists (get_stylesheet_directory_uri() . "/nggallery/css/galleryview.css")) {
+			   if ( file_exists (get_stylesheet_directory() . "/nggallery/css/galleryview.css")) {
 					$galleryviewcss = get_stylesheet_directory_uri() . "/nggallery/css/galleryview.css";
 				}
 
@@ -84,7 +84,7 @@ if (!class_exists('nggGalleryview')) {
 
 				// jQuery GalleryView
 			    // Check theme for script first
-			    if ( file_exists (get_stylesheet_directory_uri() . "/nggallery/js/jquery.galleryview.js")) {
+			    if ( file_exists (get_stylesheet_directory() . "/nggallery/js/jquery.galleryview.js")) {
 					$jspath = get_stylesheet_directory_uri() . "/nggallery/js/jquery.galleryview.js";
 				}
 				else  {
