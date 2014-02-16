@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: NextGEN Galleryview
-Plugin URI: http://bhubbard.github.com/NextGEN-Galleryview/
+Plugin URI: http://www.nextgen-galleryview.com
 Description: Add the script files and template for the jQuery Plugin Galleryview integration from Jack Anderson (http://www.spaceforaname.com/galleryview/). Use the shortcode [nggallery id=x template="galleryview"] to show the new layout. Plugin originally created by Alex Rabe.
-Author: Alex Rabe, Brandon Hubbard
+Author: Brandon Hubbard, Alex Rabe
 Author URI: http://brandonhubbard.com/
-Version: 1.3.3
+Version: 1.3.4
 Text Domain: NextGen-Galleryview
 Domain Path: /languages
 */
@@ -23,6 +23,7 @@ if (!class_exists('nggGalleryview')) {
 			// Load Scripts, Styles, and Templates
 			add_action('wp_print_styles', array(&$this, 'ngg_galleryview_styles') );
 			add_action('wp_print_scripts', array(&$this, 'ngg_galleryview_scripts') );
+			add_action('admin_menu', array(&$this,'ngg_galleryview_pages') );
 			add_filter('ngg_render_template', array(&$this, 'add_template'), 10, 2);
 		}
 
@@ -47,8 +48,8 @@ if (!class_exists('nggGalleryview')) {
 			if ( !is_admin() ) {
 
 			   // Check theme for styles first
-			   if ( file_exists (get_stylesheet_directory() . "/nggallery/css/galleryview.css")) {
-					$galleryviewcss = get_stylesheet_directory() . "/nggallery/css/galleryview.css";
+			   if ( file_exists (get_stylesheet_directory_uri() . "/nggallery/css/galleryview.css")) {
+					$galleryviewcss = get_stylesheet_directory_uri() . "/nggallery/css/galleryview.css";
 				}
 
 			   else {
@@ -60,6 +61,10 @@ if (!class_exists('nggGalleryview')) {
 			}
 		}
 
+		// NextGen-GalleryView Documentation
+		function ngg_galleryview_pages(){
+			add_submenu_page('nextgen-gallery', 'Galleryview', 'Galleryview', 'manage_options', 'nextgen-galleryview/documentation.php', '', '');
+			}
 
 		// GalleryView Scripts
 		function ngg_galleryview_scripts() {
@@ -79,8 +84,8 @@ if (!class_exists('nggGalleryview')) {
 
 				// jQuery GalleryView
 			    // Check theme for script first
-			    if ( file_exists (get_stylesheet_directory() . "/nggallery/js/jquery.galleryview.js")) {
-					$jspath = get_stylesheet_directory() . "/nggallery/js/jquery.galleryview.js";
+			    if ( file_exists (get_stylesheet_directory_uri() . "/nggallery/js/jquery.galleryview.js")) {
+					$jspath = get_stylesheet_directory_uri() . "/nggallery/js/jquery.galleryview.js";
 				}
 				else  {
 					$jspath = $this->plugin_url . 'galleryview/js/jquery.galleryview.min.js';

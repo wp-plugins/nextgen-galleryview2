@@ -2,9 +2,9 @@
 Contributors: Alex Rabe, Brandon Hubbard
 Donate link: http://brandonhubbard.com/
 Tags: photos, slideshow,images,gallery,media,admin,post,photo-albums,pictures,widgets,photo,picture,image,nextgen-gallery,nextgen gallery
-Requires at least: 3.5
-Tested up to: 3.6.1
-Stable tag: 1.3.3
+Requires at least: 3.7
+Tested up to: 3.8.1
+Stable tag: 1.3.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -56,6 +56,11 @@ Jack Wanders
 
 
 == Changelog ==
+
+= V1.3.4 =
+
+* Added a Documentation page under NextGEN-Gallery Menu
+* Updated JS/CSS override option to use get_stylesheet_directory_uri instead of get_stylesheet_directory
 
 = V1.3.3 =
 
