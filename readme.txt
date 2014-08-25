@@ -3,7 +3,7 @@ Contributors: Alex Rabe, Brandon Hubbard
 Donate link: http://brandonhubbard.com/
 Tags: photos, slideshow,images,gallery,media,admin,post,photo-albums,pictures,widgets,photo,picture,image,nextgen-gallery,nextgen gallery
 Requires at least: 3.7
-Tested up to: 3.9
+Tested up to: 4.0
 Stable tag: 1.3.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -13,8 +13,6 @@ Adds the Galleryview template for use with the NextGen-Gallery plugin.
 == Description ==
 
 NextGEN-Galleryview (originally created by Alex Rabe) is a Wordpress plugin providing NextGen-Gallery plugin users a new template based on the Galleryview jQuery Plugin created by Jack Wanders (@jackwanders). The plugin has been updated by Brandon Hubbard (@bhubbard).
-
-
 
 
 == Credits ==
