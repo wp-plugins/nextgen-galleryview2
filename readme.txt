@@ -1,6 +1,6 @@
 === NextGEN-Galleryview ===
-Contributors: Alex Rabe, Brandon Hubbard
-Donate link: http://brandonhubbard.com/
+Contributors: alexrabe, bhubbard
+Donate link: https://brandonhubbard.com
 Tags: photos, slideshow,images,gallery,media,admin,post,photo-albums,pictures,widgets,photo,picture,image,nextgen-gallery,nextgen gallery
 Requires at least: 3.7
 Tested up to: 4.0
